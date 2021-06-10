@@ -2,8 +2,15 @@
 
 ###### Default Menu
 
-* Burger
-* Beverages
-* Combo Meals
+* [x] Burger
+* [x] Beverages
+* [x] Combo Meals
 
 ###### Coupon Code **GO2018** with *10%* less if coupon code use.
+
+
+### Framework and Tools 
+
+* Visual Code Editor
+* CodeIgniter a PHP MVC Framework
+* CND (CSS) Bootstrap *Styling*

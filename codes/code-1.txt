@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 ?>
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4">Transaction</h1>
+        <h1 class="display-4">Orders</h1>
     </div>
 </div>
 
@@ -24,6 +24,8 @@ error_reporting(E_ALL & ~E_NOTICE);
             </thead>
             <?php
             if ($Orders = 1 || is_array($Orders) || is_object($Orders)) {
+
+                echo 'no';
                 foreach ($Order as $rows) {
             ?>
 
@@ -74,7 +76,6 @@ error_reporting(E_ALL & ~E_NOTICE);
                         </td>
                         <td>
                             <button type="button" class="btn btn-primary" onclick="getOrderById(<?php echo $rows->orderId; ?>)">
-                                <i class="bi bi-collection-fill"></i>
                                 View Summary
                             </button>
 
@@ -94,12 +95,9 @@ error_reporting(E_ALL & ~E_NOTICE);
         <?php echo $this->pagination_bootstrap->render(); ?>
     </div>
     <a title="Summary" style="float:right;right:55px" href='<?php echo base_url('Ordering/index'); ?>'>Back</a>
-
-
-    <br>
-    <br>
     <div id="ph_modal"></div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <script type="text/javascript">
     $getId = 0;
