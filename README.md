@@ -13,4 +13,4 @@
 
 * Visual Code Editor
 * CodeIgniter a PHP MVC Framework
-* CND (CSS) Bootstrap *Styling*
+* CDN (Content Delivery Network) Bootstrap *Styling*
